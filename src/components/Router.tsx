@@ -2,6 +2,15 @@ import { MemberProvider } from '@/integrations';
 import { createBrowserRouter, RouterProvider, Navigate, Outlet } from 'react-router-dom';
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
+import { MemberProtectedRoute } from '@/components/ui/member-protected-route';
+
+// Pages
+import HomePage from '@/components/pages/HomePage';
+import DashboardPage from '@/components/pages/DashboardPage';
+import AsteroidDetailPage from '@/components/pages/AsteroidDetailPage';
+import WatchlistPage from '@/components/pages/WatchlistPage';
+import AlertsPage from '@/components/pages/AlertsPage';
+import ProfilePage from '@/components/pages/ProfilePage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -21,9 +30,44 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>Wix Vibe</div>,
+        element: <HomePage />,
         routeMetadata: {
           pageIdentifier: 'home',
+        },
+      },
+      {
+        path: "dashboard",
+        element: <DashboardPage />,
+        routeMetadata: {
+          pageIdentifier: 'dashboard',
+        },
+      },
+      {
+        path: "asteroid/:id",
+        element: <AsteroidDetailPage />,
+        routeMetadata: {
+          pageIdentifier: 'asteroid-detail',
+        },
+      },
+      {
+        path: "watchlist",
+        element: <WatchlistPage />,
+        routeMetadata: {
+          pageIdentifier: 'watchlist',
+        },
+      },
+      {
+        path: "alerts",
+        element: <AlertsPage />,
+        routeMetadata: {
+          pageIdentifier: 'alerts',
+        },
+      },
+      {
+        path: "profile",
+        element: <ProfilePage />,
+        routeMetadata: {
+          pageIdentifier: 'profile',
         },
       },
       {
