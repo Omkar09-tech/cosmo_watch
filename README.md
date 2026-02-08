@@ -138,5 +138,8 @@ For support and questions:
 
 - Check the [ https://my-site-ktneu3lr-omkarmohanty25.wix-vibe.com/ ]
 
+CREATED BY OMKAR MOHANTY, SMRUTIREKHA DAS & PRIYABRATA SUBHRANSU BEHERA 
+THANK YOU FOR YOUR SUPPORT..... ❤️
+
 ---
 
